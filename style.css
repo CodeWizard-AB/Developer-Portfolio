@@ -134,7 +134,7 @@ nav > ul {
 
 main {
 	max-width: 114rem;
-  margin: 0 auto;
+	margin: 0 auto;
 }
 
 .about_section {
@@ -151,7 +151,7 @@ main {
 }
 
 .secondary_text {
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 	line-height: 1.8;
 	margin-bottom: 4rem;
 	letter-spacing: 0.5px;
@@ -168,5 +168,40 @@ main {
 
 	& p {
 		margin-bottom: 0.5rem;
+	}
+}
+
+.service_section {
+	margin: 15rem auto;
+	text-align: center;
+}
+
+.service_skills {
+	display: flex;
+  justify-content: center;
+	gap: 3rem;
+}
+
+.service_text {
+  max-width: 90rem;
+  margin: 3rem auto 4rem;
+}
+
+.skill {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  text-align: left;
+  border-radius: 0.5rem;
+
+	& h3 {
+		font-size: 2rem;
+		font-weight: 700;
+    margin: 1.5rem 0; 
+	}
+
+	& p {
+		font-size: 1.6rem;
+		font-weight: 400;
+    line-height: 1.8;
 	}
 }
