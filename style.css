@@ -21,7 +21,7 @@ html {
 /* * COMMON STYLE PATTERN */
 
 button {
-	padding: 1rem 2rem;
+	padding: 2rem 3rem;
 	letter-spacing: 0.5px;
 	border: none;
 	background-color: transparent;
@@ -45,11 +45,13 @@ header {
 	transform: translate(50%, -50%);
 }
 
+/* * NAV CSS */
+
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2rem 23rem;
+	padding: 4rem 23rem;
 	margin: 0 auto;
 }
 
@@ -83,6 +85,8 @@ nav > ul {
 	color: #fff;
 	background-color: var(--PRIMARY-COLOR);
 }
+
+/* * HERO SECTION CSS */
 
 .hero_content {
 	max-width: 50rem;
@@ -137,6 +141,8 @@ main {
 	margin: 0 auto;
 }
 
+/* * ABOUT SECTION CSS */
+
 .about_section {
 	background-color: var(--HERO-BG);
 	margin: 15rem auto;
@@ -148,6 +154,7 @@ main {
 	font-size: 3.5rem;
 	font-weight: 700;
 	margin-bottom: 3rem;
+	text-align: center;
 }
 
 .secondary_text {
@@ -171,6 +178,8 @@ main {
 	}
 }
 
+/* * SERVICE SECTON CSS */
+
 .service_section {
 	margin: 15rem auto;
 	text-align: center;
@@ -178,30 +187,80 @@ main {
 
 .service_skills {
 	display: flex;
-  justify-content: center;
+	justify-content: center;
 	gap: 3rem;
 }
 
 .service_text {
-  max-width: 90rem;
-  margin: 3rem auto 4rem;
+	max-width: 90rem;
+	margin: 3rem auto 4rem;
 }
 
 .skill {
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 3rem;
-  text-align: left;
-  border-radius: 0.5rem;
+	padding: 3rem;
+	text-align: left;
+	border-radius: 0.5rem;
 
 	& h3 {
 		font-size: 2rem;
 		font-weight: 700;
-    margin: 1.5rem 0; 
+		margin: 1.5rem 0;
 	}
 
 	& p {
 		font-size: 1.6rem;
 		font-weight: 400;
-    line-height: 1.8;
+		line-height: 1.8;
 	}
 }
+
+/* ? RESUME SECTION CSS */
+
+.resume_section {
+	margin: 15rem auto;
+}
+
+.resume_details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 10rem;
+}
+
+.resume_heading {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.resume_article {
+  max-width: 50rem;
+}
+
+.resume_article h3 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin: 1rem 0;
+}
+
+.resume_article p:nth-child(2) {
+	font-size: 2rem;
+	font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.resume_article p:nth-child(3) {
+	font-size: 1.6rem;
+	font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+}
+
+.resume_section button {
+  grid-column: auto / span 2;
+  margin-top: 2rem;
+  justify-self: center;
+}
+
+/* ? FOOTER */
+
