@@ -10,6 +10,7 @@
 :root {
 	--PRIMARY-COLOR: #fd6e0a;
 	--CONTENT-COLOR: #1e1e1e;
+	--HERO-BG: #fff8f3;
 }
 
 html {
@@ -20,21 +21,35 @@ html {
 /* * COMMON STYLE PATTERN */
 
 button {
-  background: var(--PRIMARY-COLOR);
-  padding: 1rem 2rem;
-  border: none;
+	padding: 1rem 2rem;
+	letter-spacing: 0.5px;
+	border: none;
+	background-color: transparent;
+	font-weight: 700;
+	border-radius: 0.5rem;
 }
 
 /* * HEADER SECTION STYLE */
+
+header {
+	position: relative;
+	background: var(--HERO-BG) url("images/header_bg.png") no-repeat right bottom;
+}
+
+.header_bg {
+	position: absolute;
+	height: 70rem;
+	top: 50%;
+	left: 23px;
+	transform: translate(50%, -50%);
+}
 
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	max-width: 120rem;
-  padding: 2rem 1rem;
+	padding: 2rem 23rem;
 	margin: 0 auto;
-	background-color: antiquewhite;
 }
 
 .header_logo {
@@ -56,11 +71,59 @@ nav > ul {
 
 .nav_link {
 	color: var(--CONTENT-COLOR);
-  font-size: 2rem;
-  font-weight: 500;
+	font-size: 2rem;
+	letter-spacing: 0.5px;
+	font-weight: 500;
 }
 
-.nav_btn {
-  font-size: 2rem;
-  color: #fff;
+.btn {
+	font-size: 2rem;
+	color: #fff;
+	background-color: var(--PRIMARY-COLOR);
+}
+
+.hero_content {
+	max-width: 50rem;
+}
+
+.hero_section {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 5rem;
+	padding-left: 23rem;
+}
+
+.hero_intro {
+	font-size: 4.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.hero_developer {
+	font-size: 8.5rem;
+	font-weight: 700;
+}
+
+.hero_text {
+	font-size: 1.8rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 1.5;
+	margin: 2rem 0;
+}
+
+.developer_image {
+	width: 90%;
+}
+
+.hero_buttons {
+	display: flex;
+	gap: 3rem;
+}
+
+.contact_btn {
+	font-size: 2rem;
+	border: 1px solid var(--PRIMARY-COLOR);
+	color: var(--PRIMARY-COLOR);
 }
