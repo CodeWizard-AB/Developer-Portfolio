@@ -27,6 +27,7 @@ button {
 	background-color: transparent;
 	font-weight: 700;
 	border-radius: 0.5rem;
+	cursor: pointer;
 }
 
 /* * HEADER SECTION STYLE */
@@ -56,6 +57,7 @@ nav {
 	font-size: 4.5rem;
 	font-weight: 800;
 	letter-spacing: 1px;
+	cursor: pointer;
 
 	& .logo_letter {
 		color: var(--PRIMARY-COLOR);
@@ -109,7 +111,7 @@ nav > ul {
 	font-size: 1.8rem;
 	font-weight: 400;
 	letter-spacing: 1px;
-	line-height: 1.5;
+	line-height: 1.8;
 	margin: 2rem 0;
 }
 
@@ -124,6 +126,47 @@ nav > ul {
 
 .contact_btn {
 	font-size: 2rem;
-	border: 1px solid var(--PRIMARY-COLOR);
+	border: 2px solid var(--PRIMARY-COLOR);
 	color: var(--PRIMARY-COLOR);
+}
+
+/* * MAIN SECTION STYLE */
+
+main {
+	max-width: 114rem;
+  margin: 0 auto;
+}
+
+.about_section {
+	background-color: var(--HERO-BG);
+	margin: 15rem auto;
+	text-align: center;
+	padding: 13rem;
+}
+
+.secondary_heading {
+	font-size: 3.5rem;
+	font-weight: 700;
+	margin-bottom: 3rem;
+}
+
+.secondary_text {
+	font-size: 1.8rem;
+	line-height: 1.8;
+	margin-bottom: 4rem;
+	letter-spacing: 0.5px;
+}
+
+.about_data {
+	display: flex;
+	justify-content: center;
+	gap: 5rem;
+}
+
+.about_article {
+	font-size: 2rem;
+
+	& p {
+		margin-bottom: 0.5rem;
+	}
 }
