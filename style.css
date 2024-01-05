@@ -1,0 +1,66 @@
+/* * GENERAL STYLE RULES */
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+}
+
+:root {
+	--PRIMARY-COLOR: #fd6e0a;
+	--CONTENT-COLOR: #1e1e1e;
+}
+
+html {
+	color: var(--CONTENT-COLOR);
+	font-size: 62.5%;
+}
+
+/* * COMMON STYLE PATTERN */
+
+button {
+  background: var(--PRIMARY-COLOR);
+  padding: 1rem 2rem;
+  border: none;
+}
+
+/* * HEADER SECTION STYLE */
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 120rem;
+  padding: 2rem 1rem;
+	margin: 0 auto;
+	background-color: antiquewhite;
+}
+
+.header_logo {
+	font-size: 4.5rem;
+	font-weight: 800;
+	letter-spacing: 1px;
+
+	& .logo_letter {
+		color: var(--PRIMARY-COLOR);
+	}
+}
+
+nav > ul {
+	display: flex;
+	align-items: center;
+	gap: 5rem;
+	list-style-type: none;
+}
+
+.nav_link {
+	color: var(--CONTENT-COLOR);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.nav_btn {
+  font-size: 2rem;
+  color: #fff;
+}
