@@ -264,9 +264,7 @@ main {
 }
 
 .resume_section button {
-	grid-column: auto / span 2;
-	margin-top: 2rem;
-	justify-self: center;
+	margin-top: 2rem;	
 }
 
 /* ? FOOTER */
